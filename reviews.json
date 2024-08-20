@@ -1,0 +1,35 @@
+{
+    "reviews": [
+      {
+        "professor": "Dr. John Smith",
+        "subject": "Computer Science",
+        "stars": 4.5,
+        "review": "Dr. Smith is an excellent professor who makes complex topics easy to understand. His lectures are well-organized, and he encourages student participation."
+      },
+      {
+        "professor": "Dr. Emily Davis",
+        "subject": "Mathematics",
+        "stars": 3.8,
+        "review": "Dr. Davis knows her material but can be a bit fast-paced. Be prepared to study outside of class to keep up."
+      },
+      {
+        "professor": "Dr. Sarah Johnson",
+        "subject": "Physics",
+        "stars": 5.0,
+        "review": "Dr. Johnson is one of the best professors I've had. She genuinely cares about her students' success and makes herself available for extra help."
+      },
+      {
+        "professor": "Dr. Michael Lee",
+        "subject": "History",
+        "stars": 4.2,
+        "review": "Dr. Lee is passionate about history and brings a lot of enthusiasm to his lectures. The assignments are challenging but fair."
+      },
+      {
+        "professor": "Dr. Angela Martinez",
+        "subject": "Biology",
+        "stars": 4.7,
+        "review": "Dr. Martinez is a great teacher who explains concepts clearly and makes sure everyone understands before moving on. Her exams are tough but fair."
+      }
+    ]
+  }
+  
