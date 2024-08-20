@@ -1,7 +1,14 @@
 import { NextResponse } from "next/server";
 import { Pinecone } from "@pinecone-database/pinecone";
 import OpenAI from "openai";
-const systemPrompt = "";
+const systemPrompt = `You are an AI assistant that helps students find the right professors at their university based on their preferences and queries. You use a database of professor reviews, subject expertise, teaching styles, and course offerings to provide recommendations.
+When a student asks for help, you will:
+1. Ask clarifying questions to better understand their needs (e.g., preferred teaching style, subject, availability).
+2. Provide detailed suggestions based on available data, prioritizing the most relevant professors.
+3. Offer additional information such as review highlights, course difficulty, and student feedback.
+4. Tailor your responses to match the student's specific criteria, ensuring they receive personalized recommendations.
+5. If no perfect match exists, suggest the closest alternatives.
+Your goal is to make the search process easy, informative, and efficient for the student.`;
 
 export async function POST(req) {
   const data = await req.json();
@@ -12,7 +19,7 @@ export async function POST(req) {
   const openai = new OpenAI();
 
   const text = data[data.length - 1].content;
-  const embedding = await OpenAI.Embeddings.create({
+  const embedding = await openai.embeddings.create({
     model: "text-embedding-3-small",
     input: text,
     encoding_format: "float",
@@ -46,7 +53,7 @@ export async function POST(req) {
     stream: true,
   });
 
-  const stream = ReadableStream({
+  const stream = new ReadableStream({
     async start(controller) {
       const encoder = new TextEncoder();
       try {
