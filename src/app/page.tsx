@@ -5,9 +5,26 @@ import {Box, Stack, Button, Typography, Modal} from '@mui/material';
 import Nav from "./components/navbar";
 import ChatModal from "./components/chatbot-modal";
 import Chatbot from "./components/chatbot";
+// import Script from "next/script";
+
 export default function Landing() {
   
   return (
+    <>
+    {/* <Script
+      dangerouslySetInnerHTML={{
+        __html: `
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:5104887,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+              `,
+            }}
+          /> */}
     <Stack
         display="flex"
         flexDirection="column"
@@ -33,7 +50,7 @@ export default function Landing() {
                 <Typography variant="h1" p={0} sx={{ textAlign:"center", fontSize: {xs:'2rem', md:'5rem', lg:'7rem'}}} >
                   Welcome to Prof AI
                 </Typography>
-                <Typography variant="h7" gutterBottom p={1} sx={{ textAlign:"center", fontSize: {xs:'1rem', md:'2rem', lg:'3rem'}}} >
+                <Typography gutterBottom p={1} sx={{ textAlign:"center", fontSize: {xs:'1rem', md:'2rem', lg:'3rem'}}} >
                   Pick the best professors for you          
                 </Typography>
                 
@@ -53,5 +70,6 @@ export default function Landing() {
                 </Button>
              </Box>
     </Stack>
+    </>
   );
 }
