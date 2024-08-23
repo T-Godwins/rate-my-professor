@@ -21,7 +21,8 @@
     "openai": "^4.56.0",
     "punycode": "^2.3.1",
     "react": "^18.3.1",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "script": "^0.1.4"
   },
   "devDependencies": {
     "@types/node": "^20",
