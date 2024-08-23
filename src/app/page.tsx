@@ -50,7 +50,7 @@ export default function Landing() {
                 <Typography variant="h1" p={0} sx={{ textAlign:"center", fontSize: {xs:'2rem', md:'5rem', lg:'7rem'}}} >
                   Welcome to Prof AI
                 </Typography>
-                <Typography variant="h7" gutterBottom p={1} sx={{ textAlign:"center", fontSize: {xs:'1rem', md:'2rem', lg:'3rem'}}} >
+                <Typography gutterBottom p={1} sx={{ textAlign:"center", fontSize: {xs:'1rem', md:'2rem', lg:'3rem'}}} >
                   Pick the best professors for you          
                 </Typography>
                 
