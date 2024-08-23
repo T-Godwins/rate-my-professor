@@ -5,13 +5,13 @@ import {Box, Stack, Button, Typography, Modal} from '@mui/material';
 import Nav from "./components/navbar";
 import ChatModal from "./components/chatbot-modal";
 import Chatbot from "./components/chatbot";
-import Script from "next/script";
+// import Script from "next/script";
 
 export default function Landing() {
   
   return (
     <>
-    <Script
+    {/* <Script
       dangerouslySetInnerHTML={{
         __html: `
         (function(h,o,t,j,a,r){
@@ -24,7 +24,7 @@ export default function Landing() {
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
               `,
             }}
-          />
+          /> */}
     <Stack
         display="flex"
         flexDirection="column"
