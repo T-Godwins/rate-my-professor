@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import {Box, Stack, Button, Typography, Modal} from '@mui/material';
+import { Box, Stack, Button, Typography, Modal } from "@mui/material";
 
 export default function Chatbot() {
   const [messages, setMessages] = useState([
@@ -52,15 +52,15 @@ export default function Chatbot() {
 
   return (
     <Stack
-    width="100%"
-    height="100%"
-    display="flex"
-    flexDirection="column"
-    justifyContent="space-between"
-        >
+      width="100%"
+      height="100%"
+      display="flex"
+      flexDirection="column"
+      justifyContent="space-between"
+    >
       <section className="chat-box p-5 mx-auto mt-20 rounded-3xl">
         <div className="scroller-content">
-        {messages.map((message: any, i: number) => {
+          {messages.map((message: any, i: number) => {
             let htmlContent = markdown.toHTML(message.content);
             return (
               <div
