@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { Box, Stack, Button, Typography, Modal } from "@mui/material";
+import { Box, Stack, Button, Typography, Modal, Card } from "@mui/material";
 
 import Nav from "./components/navbar";
 import ChatModal from "./components/chatbot-modal";
@@ -24,6 +24,15 @@ export default function Landing() {
               `,
             }}
           /> */}
+    <Box 
+      width="100vw"
+      height="100vh"
+        sx={{
+          backgroundImage:`url('/4853433.jpg')`,
+          backgroundSize:'cover',
+          backgroundPosition:'center',
+          backgroundRepeat:'repeat-y'
+        }}>
     <Stack
         display="flex"
         flexDirection="column"
@@ -33,6 +42,7 @@ export default function Landing() {
             <Nav/>
             <Box id="landing"
               width="100vw"
+              height="100vh"
               sx={{
                 height:{md:"40vh", xs:"20vh"},
                 paddingTop:{xs:20}
@@ -69,6 +79,39 @@ export default function Landing() {
                 </Button>
              </Box>
     </Stack>
+    <Box id="pricing-options"
+              width="100vw"
+              display="flex"
+              sx={{
+                flexDirection:{md:"row", xs:"column"}
+              }}
+              
+              justifyContent="center"
+              alignItems="center"
+              p={2}
+              gap={5}>
+            <Card variant="outlined" sx={{borderRadius:"30px"}}>
+              <Stack p={3} 
+                display="flex"
+                flexDirection="column"
+                justifyContent="center"
+                alignItems="center"
+                maxWidth="600px"
+                minHeight="200px"
+                >
+                  <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom align="center">
+                    Personal Course Assistant
+                  </Typography>
+                  {/* <Typography variant="h5" component="div" align="center">
+                    AI-Generated Flashcards:
+                  </Typography> */}
+                  <Typography variant="h6" sx={{ mb: 1.5 }}  align="center">
+                  Prof Assistant is your go-to AI for finding the perfect professor. Simply share your preferences, and it will recommend the best matches based on reviews, teaching styles, and course offerings. Get detailed insights, including course difficulty and student feedback, to make an informed decision and choose the right professor for you.
+                  </Typography>
+              </Stack>
+            </Card>
+          </Box>
+    </Box>
     </>
   );
 }

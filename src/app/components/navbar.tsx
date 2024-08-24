@@ -8,7 +8,7 @@ import {
 } from "@clerk/nextjs";
 
 import * as React from "react";
-import { AppBar, Box, Stack, Button } from "@mui/material";
+import { AppBar, Box, Stack, Button, Typography } from "@mui/material";
 import { useState } from "react";
 export default function Nav() {
   return (
@@ -23,14 +23,14 @@ export default function Nav() {
           alignItems="center"
           p={3}
           gap={2}
-          bgcolor="#F5F5F5"
+          // bgcolor="#F5F5F5"
         >
-          <Box>RMP Logo</Box>
+          <Typography variant="h3">Prof AI</Typography>
           <SignInButton>
             <Button
               variant="contained"
               sx={{
-                fontSize: { xs: "15px", lg: "1.2rem" },
+                fontSize: { xs: "15px", lg: "1.rem" },
                 borderRadius: "50px",
                 bgcolor: "black",
                 color: "white",
