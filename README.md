@@ -1,36 +1,24 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Prof Assistant
 
-## Getting Started
+Prof Assistant is your AI-powered guide to finding the perfect professor at your university. Designed to simplify your search, Prof Assistant offers personalized recommendations based on your specific preferences and queries.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Personalized Recommendations**: Get tailored professor suggestions based on your preferences, including teaching style, subject expertise, and availability.
+  
+- **Informed Decisions**: Access detailed insights such as course difficulty, student feedback, and review highlights to choose the best professor for you.
+  
+- **Smart Query Handling**: Prof Assistant asks clarifying questions to better understand your needs, ensuring that you receive the most relevant recommendations.
+  
+- **Closest Alternatives**: If no perfect match exists, Prof Assistant will suggest the closest alternatives, making sure you always have viable options.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## How It Works
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Clarify Your Needs**: Start by sharing your preferences—whether it's a preferred teaching style, a specific subject, or availability.
+2. **Receive Tailored Suggestions**: Based on the data, Prof Assistant will provide you with detailed recommendations of professors who best match your criteria.
+3. **Explore Additional Information**: Review highlights, course difficulty, and student feedback are provided to help you make an informed choice.
+4. **Get Alternative Options**: If a perfect match isn’t available, Prof Assistant suggests the closest alternatives, ensuring your search is still productive.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+---
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Prof Assistant is here to make your search for the perfect professor easy, informative, and efficient. Start exploring today!
