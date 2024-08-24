@@ -58,7 +58,7 @@ export default function Nav() {
           gap={2}
           bgcolor="#F5F5F5"
         >
-          <Box>RMP Logo</Box>
+          <Typography variant="h3">Prof AI</Typography>
           <UserButton />
         </Stack>
       </SignedIn>
