@@ -1,21 +1,21 @@
-import * as React from 'react';
-import {Box, Button, Typography, Modal} from '@mui/material';
+import * as React from "react";
+import { Box, Button, Typography, Modal } from "@mui/material";
 
-import Chatbot from './chatbot';
+import Chatbot from "./chatbot";
 const style = {
-  position: 'absolute' as 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  height:"80%",
+  position: "absolute" as "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  height: "80%",
   width: "50%",
-  bgcolor: 'background.paper',
-  borderRadius: '30px',
+  bgcolor: "background.paper",
+  borderRadius: "30px",
   boxShadow: 24,
   p: 4,
-  display:"flex",
-  justifyContent:"center",
-  alignItems:"center"
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
 };
 
 export default function ChatModal() {
@@ -25,7 +25,22 @@ export default function ChatModal() {
 
   return (
     <div>
-      <Button sx={{color:"white"}}onClick={handleOpen}>Get Started</Button>
+      <Button
+        variant="contained"
+        sx={{
+          fontSize: "1rem",
+          borderRadius: "50px",
+          bgcolor: "black",
+          color: "white",
+          "&:hover": {
+            bgcolor: "rgba(2, 2, 2, 0.7)",
+            color: "white",
+          },
+        }}
+        onClick={handleOpen}
+      >
+        Get Started
+      </Button>
       <Modal
         open={open}
         onClose={handleClose}
@@ -33,7 +48,7 @@ export default function ChatModal() {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Chatbot/>
+          <Chatbot />
         </Box>
       </Modal>
     </div>

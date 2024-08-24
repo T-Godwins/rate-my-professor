@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import {Box, Stack, Button, Typography, Modal} from '@mui/material';
+import { Box, Stack, Button, Typography, Modal } from "@mui/material";
 
 import Nav from "./components/navbar";
 import ChatModal from "./components/chatbot-modal";
@@ -8,7 +8,6 @@ import Chatbot from "./components/chatbot";
 // import Script from "next/script";
 
 export default function Landing() {
-  
   return (
     <>
     {/* <Script
